@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-blog.component.css']
 })
 export class PostBlogComponent implements OnInit {
-
+  loadedPosts = [];
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onCreatePost(postData: { title: string; content:string}){
+    console.log(postData);
   }
 
 }

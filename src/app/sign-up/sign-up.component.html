@@ -1,18 +1,22 @@
 <!-- Sign Up  -->
-<form action="action_page.php" style="border:1px solid #ccc">
+<form action="action_page.php" style="border:1px solid #ccc" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
     <label id="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required >
+    <input type="text" placeholder="Enter Email" name="email" required formControlName="email">
+    <span *ngIf="signUpForm.get('email')?.valid && signUpForm.get('email')?.touched"
+    class="help-block">Enter Valid Email!
+
+    </span>
 
     <label id="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required formControlName="psw">
 
     <label id="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required formControlName="psw-repeat" >
 
 
     <div class="clearfix">
