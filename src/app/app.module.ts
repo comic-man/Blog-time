@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { PostBlogComponent } from './post-blog/post-blog.component';
 import { SingleViewComponent } from './single-view/single-view.component';
-import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { HomeComponent } from './home/home.component';
     SignUpComponent,
     PostBlogComponent,
     SingleViewComponent,
-    SignInComponent,
     HomeComponent
   ],
   imports: [

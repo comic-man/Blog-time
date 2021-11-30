@@ -16,8 +16,12 @@
           <li class="nav-item">
             <a href="blog" class="nav-link" routerLink="post-blog">Post a Blog</a>
           </li>
-          <li class="nav-item">
-            <a href="Sign-in" class="nav-link" routerLink="sign-in">Login</a>
+          <li>
+            <form action="/action_page.php">
+              <input type="text" placeholder="Username" name="username">
+              <input type="text" placeholder="Password" name="psw">
+              <button type="submit">Login</button>
+            </form>
           </li>
         </ul>
       </div>
