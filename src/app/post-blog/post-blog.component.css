@@ -1,0 +1,11 @@
+.container{
+  padding-top: 2cm;
+}
+.post-container{
+  border-style: solid;
+}
+
+.btn-container{
+  align-items: center;
+  justify-content: center;
+}
