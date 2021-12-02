@@ -7,7 +7,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { PostBlogComponent } from './post-blog/post-blog.component';
 import { SingleViewComponent } from './single-view/single-view.component';
 import { HomeComponent } from './home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -22,6 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

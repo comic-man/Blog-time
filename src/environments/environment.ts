@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase = {
+  firebase: {
       apiKey: "AIzaSyCRwaggi-khrWYZ-BGRIM0lUMIXLEYYWW4",
       authDomain: "mothman-blog.firebaseapp.com",
       projectId: "mothman-blog",
@@ -12,5 +12,5 @@ export const environment = {
       messagingSenderId: "271799719731",
       appId: "1:271799719731:web:cedb85cd8b6fd8364b9046",
       measurementId: "G-ST11QH6NSR"
-    };
-}
+    }
+};

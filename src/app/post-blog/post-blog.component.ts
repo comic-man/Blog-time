@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStorageService } from '../Data-Storage/data-storage.service';
 
 @Component({
   selector: 'app-post-blog',
@@ -8,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class PostBlogComponent implements OnInit {
   loadedPosts = [];
 
-  constructor() { }
+  constructor(private dataStorageService: DataStorageService) {}
+  onSaveData(
+    this.dataStorageService.storePosts();
+  ){
+
+  }
 
   ngOnInit(): void {
   }
