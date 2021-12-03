@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PostBlogComponent } from './post-blog/post-blog.component';
 
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpComponent } from './account/sign-up/sign-up.component';
 import { SingleViewComponent } from './single-view/single-view.component';
 
 const routes: Routes = [

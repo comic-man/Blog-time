@@ -4,7 +4,8 @@ import { DataStorageService } from '../Data-Storage/data-storage.service';
 @Component({
   selector: 'app-post-blog',
   templateUrl: './post-blog.component.html',
-  styleUrls: ['./post-blog.component.css']
+  styleUrls: ['./post-blog.component.css'],
+  providers: [PostService]
 })
 export class PostBlogComponent implements OnInit {
   loadedPosts = [];

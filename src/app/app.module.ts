@@ -9,6 +9,9 @@ import { SingleViewComponent } from './single-view/single-view.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PostingComponent } from './post-blog/posting/posting/posting.component';
+import { FavoritedComponent } from './post-blog/favorited-posts/favorited/favorited.component';
+import { LoginComponent } from './account/login/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
     SignUpComponent,
     PostBlogComponent,
     SingleViewComponent,
-    HomeComponent
+    HomeComponent,
+    PostingComponent,
+    FavoritedComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
