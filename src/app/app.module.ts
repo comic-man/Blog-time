@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpComponent } from './account/sign-up/sign-up.component';
 import { PostBlogComponent } from './post-blog/post-blog.component';
 import { SingleViewComponent } from './single-view/single-view.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PostingComponent } from './post-blog/posting/posting/posting.component';
 import { FavoritedComponent } from './post-blog/favorited-posts/favorited/favorited.component';
-import { LoginComponent } from './account/login/login/login.component';
+import { SignUpService } from './account/sign-up/sign-up.service';
+import { LoggingService } from './account/sign-up/logging.service';
 
 @NgModule({
   declarations: [
@@ -21,18 +22,17 @@ import { LoginComponent } from './account/login/login/login.component';
     SingleViewComponent,
     HomeComponent,
     PostingComponent,
-    FavoritedComponent,
-    LoginComponent
+    FavoritedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
 
   ],
-  providers: [],
+  providers: [SignUpService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,7 +17,7 @@ export class SignUpComponent implements OnInit {
       email:accountEmail,
       status:accountStatus
     });
-    this.loggingService.logStatusChange(accountStatus);
+    //this.loggingService.logStatusChange(accountStatus);
   }
 
   constructor(private loggingService:LoggingService) { }

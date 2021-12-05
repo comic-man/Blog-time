@@ -9,6 +9,7 @@ import { SignUpService } from './account/sign-up/sign-up.service';
 export class AppComponent implements OnInit{
   accounts: { email:string, status: string}[] = [];
   title = 'Blog-time';
+  email: { email: string; status: string; }[] | undefined;
 
   constructor(private signUpService:SignUpService){}
   ngOnInit(){

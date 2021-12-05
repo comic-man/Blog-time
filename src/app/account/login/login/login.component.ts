@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   onSetTo(status:string) {
     this.statusChanged.emit({id:this.id, newStatus:status});
-    this.loggingService.logStatusChange(status);
+    //this.loggingService.logStatusChange(status);
   }
   ngOnInit(): void {
   }
