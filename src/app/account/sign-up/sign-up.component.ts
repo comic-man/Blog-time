@@ -1,5 +1,5 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit, EventEmitter, Output, ElementRef } from '@angular/core';
+import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { LoggingService } from './logging.service';
 
 @Component({
@@ -33,7 +33,7 @@ export class SignUpComponent implements OnInit {
       (value) => console.log(value)
     )
   }
-    onSubmit() {
+    onSubmit(form:NgForm) {
       console.log(this.signUpForm);
     }
 
