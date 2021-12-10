@@ -34,6 +34,8 @@ export class SignUpComponent implements OnInit {
     )
   }
     onSubmit(form:NgForm) {
+      this.user.email =true;
+
       console.log(this.signUpForm);
     }
 
