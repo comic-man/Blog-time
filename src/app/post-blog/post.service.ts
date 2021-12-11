@@ -10,7 +10,8 @@ export class PostBlogComponent implements OnInit {
     new Post ('Test Post')
   ];
 
-  getPosts(){
+  getPosts(
+  ){
     return this.posts.slice();
   }
   constructor() { }
