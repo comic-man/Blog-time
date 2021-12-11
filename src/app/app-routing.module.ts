@@ -6,10 +6,11 @@ import { PostBlogComponent } from './post-blog/post-blog.component';
 
 import { SignUpComponent } from './account/sign-up/sign-up.component';
 import { SingleViewComponent } from './single-view/single-view.component';
+import { AuthGaurd } from './auth-guard.service';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
-  {path:'sign-up', component:SignUpComponent},
+  {path:'sign-up', canActivate:[AuthGaurd], component:SignUpComponent},
   {path:'post-blog', component:PostBlogComponent},
   {path:'single-view', component:SingleViewComponent},
 ];

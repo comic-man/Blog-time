@@ -8,7 +8,7 @@ export class AuthGaurd implements CanActivate {
   constructor(private signUpService: SignUpService, private router: Router) {}
   canActivate(route: ActivatedRouteSnapshot,
               state: RouterStateSnapshot ): Observable<boolean> | Promise<boolean> | boolean {
-    this.signUpService.isAuthenticated()
+    return this.signUpService.isAuthenticated()
       .then(
         authenticated: boolean) => {
           if (authenticated){

@@ -13,6 +13,8 @@ import { PostingComponent } from './post-blog/posting/posting/posting.component'
 import { FavoritedComponent } from './post-blog/favorited-posts/favorited/favorited.component';
 import { SignUpService } from './account/sign-up/sign-up.service';
 import { LoggingService } from './account/sign-up/logging.service';
+import { AuthGaurd } from './auth-guard.service';
+import { StorageService } from './storage.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { LoggingService } from './account/sign-up/logging.service';
     HttpClientModule,
 
   ],
-  providers: [SignUpService, LoggingService],
+  providers: [SignUpService, LoggingService, AuthGaurd, StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
