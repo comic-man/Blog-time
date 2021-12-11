@@ -11,6 +11,7 @@ import { LoggingService } from './logging.service';
 export class SignUpComponent implements OnInit {
   signUpForm!: FormGroup;
   @Output () accountAdded = new EventEmitter <{email: string, status: string}>();
+  user: any;
 
   onCreateAccount( accountEmail:string, accountStatus:string){
     this.accountAdded.emit({

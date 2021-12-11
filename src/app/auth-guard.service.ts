@@ -16,7 +16,7 @@ export class AuthGaurd implements CanActivate {
   }
 }
 
-function authenticated(authenticated: any, boolean: any): any {
+function authenticated(authenticated: any): boolean | Observable<boolean> | Promise<boolean> {
   throw new Error("Function not implemented.");
 }
 

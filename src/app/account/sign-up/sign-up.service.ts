@@ -4,8 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SignUpService {
-  email: { email: string; status: string; }[] | any;
-  accounts:{ account: string; status: string; }[] | any;
+  email: { email: string; status: string; }[] | undefined | undefined;
+  accounts: { account: string; status: string; }[] = [];
+  isAuthenticated: any;
 
   constructor() { }
 }
